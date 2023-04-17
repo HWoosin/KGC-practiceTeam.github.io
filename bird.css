@@ -1,0 +1,304 @@
+/* reset */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+.wrapper {
+    background: url('./img/bg1.jpg') ;
+    background-size: cover;
+    width: 100%; 
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left:0;
+    overflow: hidden;
+
+    
+}
+
+.main-menu {
+    background-color: blanchedalmond;
+    width: 60%;
+    height: 60%;
+    opacity: 0.9;
+    margin: 10% auto ;
+    border-radius: 30px;
+}
+
+ .main-menu > h2 {
+    background-color: rgb(16, 191, 27);
+    width: 40%;
+    height: 40%;
+    color: white;
+    font-weight: 600;
+    font-size: 80px;
+    margin-top: 5%;
+    text-align: center;
+    padding-top: 6%;
+    box-sizing: border-box;
+    border-radius: 30px;
+
+}
+.main-menu > h2:hover {
+    background-color: rgba(16, 191, 27, 0.7);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.game-rule {
+    float: left;
+    margin-left: 5%;
+    
+}
+
+.start {
+    float: right;
+    margin-right: 5%;
+}
+
+
+
+.main-menu > h1 {
+    font-size: 130px;
+    font-weight: 900;
+    
+    text-align: center;
+    padding: 50px;
+}
+
+.rule {
+    display:none;
+    background-color: blanchedalmond;
+    width: 60%;
+    height: 60%;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.rule > h3 {
+    font-size: 100px;
+    text-align: center;
+    color: black;
+    
+    
+    
+}
+
+.rule img {
+    width: 150px;
+    margin-top: 80px;
+   
+
+}
+
+.rule .lnr-pointer-up {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: leftmove 1.5s infinite;
+}
+
+@keyframes leftmove {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translate(-340px);
+
+    }
+}
+
+.bonusMoving{
+    animation: bonusMove 2s infinite forwards;
+}
+
+@keyframes bonusMove {
+    0%{
+        transform: translateX(200px);
+    }
+    25%{
+        transform: translateY(-200px);
+    }
+    50%{
+        transform: translateX(-200px);
+    }
+    75%{
+        transform: translateY(200px);
+
+    }
+    100%{
+        transform: translateX(200px);
+
+    }
+}
+
+
+.rule li {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.rule button{
+    font-size: 40px;
+    opacity: 0.6;
+}
+
+.rule .back {
+    position: absolute;
+    top: 20%;
+    left:90%;
+
+
+}
+.show {
+    display: block;
+}
+
+.inner {
+    float:left;
+    margin-left: 5%;
+}
+
+.bonus {
+    float: right;
+    margin-right: 5%;
+}
+
+
+
+.game .score {
+
+    background-color: blanchedalmond;
+    opacity:0.9;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 10%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.game .score > span {
+    font-size: 20px;
+    
+    font-weight: 700;
+    color: black;
+    
+    
+
+
+}
+
+.result-menu {
+    background-color: blanchedalmond;
+    width: 60%;
+    height: 60%;
+    margin: 10% auto;
+    border-radius: 30px;
+    position: relative;
+
+}
+
+.result-menu h1 {
+    color: black;
+    
+    font-size: 100px;
+    text-align: center;
+   
+   
+  
+   
+}
+
+.result-menu h2 {
+   
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(16, 191, 27);
+    width: 40%;
+    height: 40%;
+    color: white;
+    font-weight: 600;
+    font-size: 80px;
+    
+    text-align: center;
+    padding-top: 6%;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+.result-menu h2:hover {
+    background-color: rgba(16, 191, 27, 0.7);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+#replay{
+    float: left;
+    width: 30%;
+    margin-left: 15%;
+}
+
+#rank-list {
+    float: right;
+    width: 30%;
+    margin-right: 15%;
+}
+
+span {
+    display: block;
+}
+
+p {
+    display: inline;
+}
+
+#standard {
+    position: absolute;
+    top: 20%;
+    left: 85%;
+}
+.game {
+    display: none;
+}
+.play {
+    display: block;
+}
+
+.pointMoving {
+    font-size: 30px;
+    animation: getPoint 1s forwards;
+}
+@keyframes getPoint {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px) scale(1.5);
+    }
+}
+
+
+
+.fever {
+    animation: flicker 0.5s infinite;
+}
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
