@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch Bird</title>
+     <!-- reset.css -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+     <!-- custom css-->
+     <link rel="stylesheet" href="./bird.css">
+ 
+     <!-- custom js-->
+     <script src="./bird.js" defer></script>
+
+     <!-- linear icon -->
+     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+     <style>
+     @font-face {
+     font-family: 'DungGeunMo';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+        }
+     body { font-family: 'DungGeunMo', serif }
+
+     </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <section class="main-menu">
+            <h1>캐치 버드</h1>
+            <h2 class="game-rule">게임 방법</h2>
+            <h2 class="start">게임 시작</h2>
+            <div class="rule">
+                <h3>게임 방법</h3>
+                
+                <ul class="inner">
+                    <img src="./img/b1.png" alt="새그림">
+                <span class="lnr lnr-pointer-up"></span>
+                    <li>랜덤으로 새가 생성됩니다.</li>
+                    <li>나타난 새를 클릭하면 점수를 얻습니다.</li>
+                    <li>당신의 피지컬을 확인하고 MASTER에 도전 해보세요!</li>
+                </ul>
+                <ul class="bonus">
+                    <img src="./img/bb.png" alt="새그림">
+                    <img src="./img/bonus.png" alt="새그림">
+                    <li>까마귀와 골든 스니치가 등장합니다.</li>
+                    <li>까마귀를 클릭하면 점수를 1점 잃습니다.</li>
+                    <li>골든 스니치는 보너스 점수 3점 얻습니다.</li>
+                </ul>
+                <button class="back"><span class="lnr lnr-cross"></span></button>
+            </div>
+        </section>
+
+        <section class="game">
+            <div class="score">
+                <span class="catchbirds">잡은 마리수 <p id="num"></p></span>
+                <span class="time">남은 시간: <p id="time"></p></span>
+            </div>
+        </section>
+
+        <section class="result-menu">
+            <h1>게임 결과</h1>
+            <h1><p id="resultnum"></p>마리 잡았습니다.</h1>
+            <h1>당신은 <p id="rank">Rank</p></h1>
+            <h2 id="replay">다시 하기</h2>
+            <h2 id="rank-list">랭크 기준</h2>
+            <ul id="standard">
+                <li>Master: 61마리 이상</li>
+                <li>Diamond: 51마리 이상</li>
+                <li>Platinum: 41마리 이상</li>
+                <li>Gold: 31마리 이상</li>
+                <li>Silver: 21마리 이상</li>
+                <li>Blonze: 20마리 이하</li>
+            </ul>
+        </section>
+    </div>
+    
+</body>
+</html>
